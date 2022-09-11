@@ -1,0 +1,227 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(202, 195, 207);
+}
+
+.nav
+{
+    width: 99%;
+    display: flex;
+   transform: translateY(10px);
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 10px;
+}
+.imag img 
+{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+
+}
+.logo h4
+{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: capitalize;
+   
+}
+
+.logo p
+{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    opacity: .7;
+    margin-top: 1px;
+}
+
+.menu
+{
+    display: flex;
+    gap:2rem;
+    transform: translateX(10px);
+}
+
+a:hover
+{
+    background-color: darkblue;
+    color: white;
+    padding: 1px 8px;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:black;
+    transition: all 0.5s ease;
+}
+
+
+.bty button
+{
+    border: 0;
+    background-color: darkblue;
+    color: white;
+    padding: 4px 10px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    transition: all 0.6s ease;
+   
+}
+
+.bty button:hover
+{
+    background-color: white;
+    color: darkblue;
+    transform: translateY(2px);
+    transition: all 0.6s ease;
+}
+
+
+/* Hero */
+
+.hero
+{   width: 99%;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    gap: 10px;
+}
+
+.sawir 
+{
+    width: 40%;
+}
+.sawir img
+{
+    width: 99%;
+    height: 99%;
+}
+
+.qormo
+{
+    width: 60%;
+    padding:18px 10px;
+}
+
+.qormo h1
+{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 6px 10px;
+    
+}
+.qormo p
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    transform: translateX(10px)
+}
+.qormo button
+{
+    margin-left: 16px;
+    padding: 6px 10px;
+    background-color: darkblue;
+    color: white;
+    margin-top: 16px;
+    border: 0;
+    text-transform: capitalize;
+   
+}
+#tay
+{
+    background-color:white;
+    color: darkblue;
+    font-weight: bolder;
+}
+::selection
+{
+   color: red;
+   background-color: aqua;
+}
+
+@media screen  and (max-width:768px) {
+     
+    .nav
+    {
+        display: none;
+    }
+
+    .hero
+    {
+        flex-direction: column-reverse;
+    }
+    .sawir
+    {
+        width: 100%;
+    }
+    .sawir img
+    {
+        width: 70%;
+        transform: translateX(80px);
+    
+  }
+    .qormo{
+        width: 100%;
+    }
+    .qormo h1{
+        font-size: 20px;
+        animation: text_reveal_box 1s ease forwards;
+        
+    }
+    .qormo h1 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: crimson;
+        animation: text_reveal_box 1s ease;
+        animation-delay: 1s;        
+    }
+   
+    .qormo p {
+        font-size: 14px;
+        font-weight: 500;
+        margin-left:60px;
+        font-family: Arial, Helvetica, sans-serif;
+        transform: translateX(-50px);
+    }
+    .batanis
+    {
+        transform: translateX(100px );
+    }
+}
